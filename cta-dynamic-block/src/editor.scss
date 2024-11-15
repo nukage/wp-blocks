@@ -1,0 +1,33 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-cta-dynamic-block {
+	border: 1px dotted #f00;
+}
+// Adjust media placeholder element in editor
+
+.cta-image-container {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+
+	.block-editor-media-placeholder {
+		width: 60% ;
+	}
+}
+
+
+.button-remove {
+	z-index: 2;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	background: white;
+	color: #b93535;
+	border: 2px solid #b93535;
+	cursor: pointer;
+	border-radius: 4px;
+}

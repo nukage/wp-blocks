@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Plugin Name:       Example Dynamic Block
  * Description:       Example block scaffolded with Create Block tool.
@@ -13,7 +14,7 @@
  * @package Qntm
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (! defined('ABSPATH')) {
 	exit; // Exit if accessed directly.
 }
 
@@ -24,7 +25,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function qntm_example_dynamic_block_block_init() {
-	register_block_type( __DIR__ . '/build' );
+function qntm_example_dynamic_block_block_init()
+{
+	register_block_type(__DIR__ . '/build');
 }
-add_action( 'init', 'qntm_example_dynamic_block_block_init' );
+add_action('init', 'qntm_example_dynamic_block_block_init');
